@@ -6,7 +6,7 @@
 }
 
 :root {
-  --color-bg: #030303;
+  --color-bg: #101010;
   --color-primary: #f5eee4;
   --color-secondary: #161616;
   --color-socials: #8ad1f1;
@@ -18,6 +18,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 body {
@@ -35,6 +36,9 @@ body {
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
 }
 
 svg {
@@ -148,7 +152,7 @@ h1 h2 article p {
   justify-content: center;
 }
 
-.sidenav-button {
+/* .sidenav-button {
   width: 0.5em;
   height: 0.5em;
   border-radius: 50%;
@@ -156,7 +160,7 @@ h1 h2 article p {
   will-change: opacity;
   opacity: 0.3;
   margin: 0.7em 0;
-}
+} */
 
 .active-menu {
   opacity: 0.8;
@@ -253,6 +257,22 @@ h1 h2 article p {
   margin: 0;
   font-size: 1em;
   font-weight: 700;
+}
+
+#home-logo {
+  width: 250px;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.title-link {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.title-link:hover {
+  opacity: 0.8;
 }
 
 @media screen and (orientation: portrait) {
